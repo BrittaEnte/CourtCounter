@@ -22,6 +22,7 @@
         android:layout_gravity="center"
         android:padding="4dp"
         android:text="0"
+        android:id="@+id/team_a_score"
         android:textSize="16sp" />
 
     <Button
@@ -40,6 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="+ 1 points" />
+        android:text="free throw " />
 
 </LinearLayout>
