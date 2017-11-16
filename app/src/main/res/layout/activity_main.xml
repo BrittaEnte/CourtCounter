@@ -45,4 +45,6 @@
         android:onClick="onepointsA"
         android:text="free throw " />
 
+
+
 </LinearLayout>
