@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:
     android:orientation="vertical"
     tools:context="com.example.android.courtcounter.MainActivity">
 
@@ -29,18 +28,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:onClick="threepointsA"
         android:text="+ 3 points" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:onClick="twopointsA"
         android:text="+ 2 points"  />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:onClick="onepointsA"
         android:text="free throw " />
 
 </LinearLayout>

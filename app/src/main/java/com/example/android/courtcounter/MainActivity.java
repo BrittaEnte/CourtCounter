@@ -2,16 +2,19 @@ package com.example.android.courtcounter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(8);
+
     }
     /**
      * Displays the given score for Team A.
@@ -21,4 +24,23 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    /**
+     * this method is called when button +3points is clicked
+     */
+
+    public void threepointsA (View view){
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
+
+    }
+    public void twopointsA (View view){
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
+
+    }
+    public void onepointsA (View view){
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
+
+    }
 }
